@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - StatEngine by GreenCube</title>
+    <style>
+        :root {
+            --primary: #1E3A8A;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --bg-page: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border: #E2E8F0;
+            --accent: #0F766E;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+        .meta {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        h2 {
+            color: var(--primary);
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+        p, ul {
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+        ul {
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background-color: #F0FDF4;
+            border-left: 4px solid #16A34A;
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 15px;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--text-muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <div class="meta">
+                <strong>Application:</strong> StatEngine<br>
+                <strong>Developer / Publisher:</strong> GreenCube<br>
+                <strong>Effective Date:</strong> October 14, 2026<br>
+                <strong>Contact Email:</strong> <a href="mailto:kkd.backup01@gmail.com">kkd.backup01@gmail.com</a>
+            </div>
+        </header>
+
+        <div class="highlight-box">
+            <strong>Core Privacy Principle:</strong> StatEngine is designed with an <strong>offline-first, zero-telemetry architecture</strong>. Your statistical research datasets, mathematical computations, figures, and generated reports remain strictly on your local device. We do not collect, transmit, store, or sell any personal information or dataset contents.
+        </div>
+
+        <h2>1. Information Collection and Processing</h2>
+        <p>StatEngine functions locally on your Android device:</p>
+        <ul>
+            <li><strong>Data Files (CSV, TSV, XLSX, JSON):</strong> When you open a dataset file, the data is loaded directly into the application's local process memory for statistical calculations. It is never uploaded to any remote server or third-party cloud storage.</li>
+            <li><strong>Analysis Results and Reports:</strong> All statistical outputs, descriptive metrics, generated charts, and PDF/HTML dossiers are created locally on your device.</li>
+            <li><strong>No Tracking or Telemetry:</strong> We do not integrate third-party advertising SDKs, behavioural trackers, analytics tools, or device fingerprinting mechanisms.</li>
+        </ul>
+
+        <h2>2. Device Permissions and Storage Access</h2>
+        <p>StatEngine requests only the minimum system permissions necessary to deliver core application functionality:</p>
+        <ul>
+            <li><strong>Read Access via System File Picker (SAF):</strong> When importing local datasets, StatEngine uses the secure Android Storage Access Framework (SAF). The application only accesses the specific file you explicitly choose.</li>
+            <li><strong>Internet Permission (Optional URL Ingestion & Online Synthesis):</strong> StatEngine uses internet access exclusively when you explicitly ask the app to download an open dataset from a user-specified HTTP/HTTPS URL, or if you choose to query cloud AI generation using your own API key.</li>
+            <li><strong>Write / Export Storage:</strong> Generated PDF and HTML reports are written only to standard app cache or designated user-selected export paths via Android FileProvider.</li>
+        </ul>
+
+        <h2>3. Artificial Intelligence Features</h2>
+        <p>StatEngine provides built-in deterministic scientific synthesis that runs completely offline on your device with no remote calls. If you optionally choose to input a personal Google Gemini API key to query cloud synthesis:</p>
+        <ul>
+            <li>Your API key is stored securely in your device's private app storage (SharedPreferences) and is never transmitted to GreenCube.</li>
+            <li>Any request sent to Google's API contains only the statistical summaries required for synthesis and is governed by Google's Privacy Policy.</li>
+        </ul>
+
+        <h2>4. Data Retention and Deletion</h2>
+        <p>Because all data is processed in-memory or saved in your local device storage, closing the app or clearing the dataset immediately removes it from memory. You retain complete control over your datasets and exported reports at all times. Uninstalling the application removes all application-associated sandboxed data from your device.</p>
+
+        <h2>5. Children's Privacy</h2>
+        <p>StatEngine does not collect any personally identifiable information from any user, including children under the age of 13. The application is suitable for educational, academic, and professional scientific use.</p>
+
+        <h2>6. Security</h2>
+        <p>We value your trust in processing your sensitive research data. Because data computation is executed locally on-device without remote servers, your datasets are protected by your device's operating system security and sandboxing architecture.</p>
+
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy periodically. Any updates will be published on this page with an updated effective date.</p>
+
+        <h2>8. Contact Us</h2>
+        <p>If you have any questions or suggestions regarding this Privacy Policy or StatEngine, please do not hesitate to contact us at:</p>
+        <p>
+            <strong>Developer:</strong> GreenCube<br>
+            <strong>Email:</strong> <a href="mailto:kkd.backup01@gmail.com">kkd.backup01@gmail.com</a>
+        </p>
+
+        <footer>
+            &copy; 2026 GreenCube. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
